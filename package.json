@@ -9,7 +9,7 @@
   "author": "Misha Moroshko <michael.moroshko@gmail.com>",
   "scripts": {
     "test": "nyc mocha 'src/*.test.js'",
-    "dist": "rm -rf arrays objects && mkdir arrays objects && cp src/arrays.js arrays/index.js && cp src/objects.js objects/index.js && cp src/is.js {arrays,object}/",
+    "dist": "rm -rf arrays objects && mkdir arrays objects && cp src/arrays.js arrays/index.js && cp src/objects.js objects/index.js && cp src/is.js arrays/ objects/",
     "prebuild": "npm test",
     "build": "npm run dist",
     "preversion": "npm run prebuild",
