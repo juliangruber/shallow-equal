@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint src",
     "test": "nyc mocha 'src/*.test.js'",
-    "dist": "rm -rf arrays objects && mkdir arrays objects && cp src/arrays.js arrays/index.js && cp src/objects.js objects/index.js",
+    "dist": "rm -rf arrays objects && mkdir arrays objects && cp src/arrays.js arrays/index.js && cp src/objects.js objects/index.js && cp src/is.js {arrays,object}/",
     "prebuild": "npm run lint && npm test",
     "build": "npm run dist",
     "preversion": "npm run prebuild",
